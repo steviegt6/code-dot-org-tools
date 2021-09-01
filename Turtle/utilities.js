@@ -1,6 +1,6 @@
 /* These utilities make use of turtle methods with parameters.
  * See utilities-parameterless.js for parameterless utilities.
- * These classes do not contain alternatives for eachother.
+ * These classes do not always contain alternatives for eachother.
  */
 
 /*
