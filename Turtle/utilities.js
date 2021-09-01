@@ -80,7 +80,7 @@ function drawGridOfSquares(height, width, returnToOrigin)
     // Return to original rotation to maintain purity and loop-safety.
     turnLeft();
   }
-}*?
+}*/
 
 // Identical to parameterless, save for using turnRight() instead of slowTurnRight().
 /*
