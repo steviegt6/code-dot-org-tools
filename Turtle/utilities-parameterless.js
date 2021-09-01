@@ -3,8 +3,16 @@
  * are forced to use scuffed and questionable methods for performing simple tasks. Loops-galore!
  */
 
-// Draw a 3x3 grid of squares, then return to the origin.
-// drawGridOfSquares(3, 3, true);
+/*
+ * Turns a turtle 180 degrees.
+ */
+function turnAround() {
+  // Parameter alternative:
+  // turnLeft(180);
+  
+  turnLeft();
+  turnLeft();
+}
 
 /*
  * Draws a grid on the screen.
