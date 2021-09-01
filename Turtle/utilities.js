@@ -1,5 +1,5 @@
 // Draw a 3x3 grid of squares, then return to the origin.
-drawGridOfSquares(3, 3, true);
+// drawGridOfSquares(3, 3, true);
 
 /*
  * Draws a grid on the screen.
