@@ -1,3 +1,8 @@
+/* Utility methods that call turtle methods parameterless. Code.org does not allow you to
+ * use the parameters in their functions in earlier lessons for some odd reason, meaning we
+ * are forced to use scuffed and questionable methods for performing simple tasks. Loops-galore!
+ */
+
 // Draw a 3x3 grid of squares, then return to the origin.
 // drawGridOfSquares(3, 3, true);
 
@@ -12,8 +17,13 @@ function drawGridOfSquares(height, width, returnToOrigin)
   // Draw a row of squares, navigate to the original position, move forward, repeat.
   while (height-- > 0)
   {
+    // Draw a row.
     drawRowOfSquares(width);
+    
+    // Return to where we were previously.
     toOriginalPosition(width);
+    
+    // Move forward in order to continue to the next row in a grid.
     moveForward();
   }
   
@@ -37,11 +47,16 @@ function drawGridOfSquares(height, width, returnToOrigin)
  */
 function toOriginalPosition(offset)
 {
+  // Assuming forward-facing.
+  
+  // Turn left in order to move back.
   turnLeft();
   
+  // Take the specified amount of steps back.
   while (offset-- > 0)
     moveForward();
   
+  // Return to original rotation (typically north).
   slowTurnRight();
 }
 
@@ -53,6 +68,8 @@ function drawRowOfSquares(count) {
     drawUpperRightSquare();
     slowTurnRight();
     moveForward();
+    
+    // Return to original rotation to maintain purity and loop-safety.
     turnLeft();
   }
 }
@@ -62,17 +79,20 @@ function drawRowOfSquares(count) {
  */
 function drawUpperRightSquare()
 {
+  // Consider unnesting an allowing usage of rotation through parameters later?
   function drawAndTurn() {
     moveForward();
     slowTurnRight();
   }
   
+  // TODO: Use a loop here.
   drawAndTurn();
   drawAndTurn();
   drawAndTurn();
   drawAndTurn();
 }
 
+/* Paramerless-only. */
 /*
  * Calls turnLeft with default parameters three times as per code.org's requirements.
  * An alternative way of turning right is turnLeft(-90), but they don't allow that early on.
