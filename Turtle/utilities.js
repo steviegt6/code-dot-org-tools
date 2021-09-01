@@ -14,7 +14,6 @@ function turnAround() {
   // turnLeft();
 }
 
-
 /*
  * Draws a grid on the screen.
  */
