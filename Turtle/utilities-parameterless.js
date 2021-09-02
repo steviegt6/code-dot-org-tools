@@ -94,8 +94,11 @@ function drawUpperRightSquare()
   }
   
   let drawTurnTimes = 4;
-  for (let i = 0; i < drawTurnTimes; i++) { 
+  int i = 0;
+  
+  while (i < drawTurnTimes) {
     drawAndTurn();
+    i++;
   }
 }
 
