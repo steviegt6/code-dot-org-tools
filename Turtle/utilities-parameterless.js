@@ -93,11 +93,11 @@ function drawUpperRightSquare()
     slowTurnRight();
   }
   
-  // TODO: Use a loop here.
-  drawAndTurn();
-  drawAndTurn();
-  drawAndTurn();
-  drawAndTurn();
+  var drawTurnTimes = 4;
+  
+  while (drawTurnTimes-- > 0) {
+    drawAndTurn();
+  }
 }
 
 /* Paramerless-only. */
