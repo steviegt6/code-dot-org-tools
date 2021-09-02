@@ -93,12 +93,10 @@ function drawUpperRightSquare()
     slowTurnRight();
   }
   
-  let drawTurnTimes = 4;
-  int i = 0;
+  var drawTurnTimes = 4;
   
-  while (i < drawTurnTimes) {
+  while (drawTurnTimes-- > 0) {
     drawAndTurn();
-    i++;
   }
 }
 
